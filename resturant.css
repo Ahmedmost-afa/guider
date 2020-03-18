@@ -1,0 +1,453 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgba(240, 222, 185, 0.959);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+    perspective:(800px);  
+}
+.container{
+    width:1170px;
+    margin:auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+}
+/*start slider*/
+.slider{
+    width:100%;
+    height:700px;
+    background-image:url('anas2.jpg');
+    background-size:100% 700px;
+    background-repeat:no-repeat;
+    position:relative;
+    
+}
+.slider .cover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index:1;
+}
+.slider .child article {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    z-index: 2;   
+}
+.slider .child article h1{
+    color:white;
+    font-size:80px;
+    font-family: 'Times New Roman', Times, serif , sans-serif;    
+}
+.slider .child article h1 span{
+    display:table-cell;
+}
+.slider .child article .hr{
+    width:250px;
+    height:3px;
+    background-color:white;
+    margin:0 auto;
+}
+.slider .child article h2 {
+    color:rgb(23, 204, 77);
+    width:465px;
+    margin-left:90px;
+    margin-top:20px;
+}
+.slider .child article button{
+    background-color:gainsboro;
+    width:80px;
+    height:40px;
+    margin-left: 267px;
+    margin-top: 20px;
+    border-radius:10px;
+    
+}
+.slider .child article button a{
+    text-decoration:none;
+    color:rgb(23, 73, 38);
+    font-weight:bold;
+    
+}
+/*end slider*/
+/*start information about cheif and resturant*/
+.information {
+    width:100%;
+    height:715px;
+    margin-top:120px;
+    
+}
+
+.information h1 {
+    text-align:center;
+    color:rgb(23, 73, 38);
+    margin-top:30px;
+    font-size:70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.information .cheif{
+    width:40%;
+    height:500px;
+    background-image: url('burak.jpg');
+    background-size:100% 500px;
+    border-radius:40px;
+    margin:73px 0 10px 80px;
+    float:left;  
+}
+.information .cheif .overlay{
+    background-color:rgba(11, 23, 58, 0.1);
+    width:100%;
+    height:500px;
+    font-size:0px;
+    color:wheat;
+    text-align:center;
+    border-radius:40px;
+     
+}
+.information .cheif .overlay h2 {
+    padding-top:200px;
+}
+.information .cheif .overlay:hover{
+    background-color:rgba(0, 0, 0, 0.7);
+    font-size:20px;
+}
+.information .aboutrest{
+    width:40%;
+    height:500px;
+    background-color:rgb(216, 200, 109);
+    float:left;
+    margin:73px 0 10px 80px;
+    border-radius:40px;
+    border:3px solid rgb(155, 138, 40);
+    
+    
+
+    
+}
+.information .aboutrest h2 {
+    color:rgb(23, 73, 38);
+    text-align:center;
+    padding-top:65px;
+}
+.information .aboutrest h5 , h4{
+    color:rgb(24, 112, 51);
+    text-align:center;
+    padding-top:10px;
+}
+.information .aboutrest li {
+    list-style:square;
+    font-weight: bold;
+    line-height:40px;
+}
+/*end information about cheif and resturant*/
+/*start the menu*/
+.parent {
+    height:1000px;
+    width:100%;
+    margin-top:120px;
+    background-color:rgb(214, 216, 103);
+}
+.menu{
+    width:70%;
+    margin:0 auto;
+    height:100%;
+}
+.menu h1{
+    color: rgb(23, 73, 38);
+    font-size: 68px;
+    margin-left: 40%;
+    padding-top: 44px;
+    width: 180px;
+    height: 90px;
+    border-bottom:2px solid rgb(57, 206, 57);
+}
+.menuchild1{
+    width:100%;
+    height:30%;
+    margin-top:72px; 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between; 
+}
+.menuchild1 .menu1{
+   width:282px;
+   height:300px;
+   background-color:white;
+   transition:all .4s ease-in-out;
+   background-image:url('brostd.jpg');
+   background-size:282px 300px;
+   border-radius:15px;
+   position:relative;
+}
+
+.menuchild1 .menu1 .cover1{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.menuchild1 .menu1 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:15%;
+}
+.menuchild1 .menu1 article:not(h3){
+    color:white;
+    margin-top:30px;
+}
+.menuchild1 .menu1 article h3{
+    color:rgb(45, 207, 45);
+    padding:30px 0px 10px 0px ;
+}
+.menuchild1 .menu2{
+    width:282px;
+    height:300px;
+    background-color:white;
+    transition:all .4s ease-in-out;
+    background-image:url('pizza.jpg');
+    background-size:282px 300px;
+    border-radius:15px;
+    position:relative;
+    
+}
+.menuchild1 .menu2 .cover2{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.menuchild1 .menu3{
+    width:282px;
+    height:300px;
+    background-color:white;
+    transition:all .4s ease-in-out;
+    background-image:url('sand.jpg');
+    background-size:282px 300px;
+    border-radius:15px;
+    position:relative; 
+}
+.menuchild1 .menu3 .cover3{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.menuchild1 .menu1:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+.menuchild1 .menu2:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+.menuchild1 .menu3:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+/*start features of  menu1*/
+.menuchild1 .menu1 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:15%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild1 .menu1 article h3 , h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+}
+/*end menu1*/
+/*start menu 2*/
+.menuchild1 .menu2 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:22%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild1 .menu2 article h3 , h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+}
+/*end menu2*/
+/*start menu 3*/
+.menuchild1 .menu3 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:9%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild1 .menu3 article h3 ,h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+}
+/*end menu 3*/
+/*start menuchid2*/
+.menuchild2{
+    width:100%;
+    height:30%;
+    margin-top:72px; 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between; 
+}
+.menuchild2 .menu4{
+   width:282px;
+   height:300px;
+   background-color:white;
+   transition:all .4s ease-in-out;
+   background-image:url('fatta.jpg');
+   background-size:282px 300px;
+   border-radius:15px;
+   position:relative;
+}
+
+.menuchild2 .menu4 .cover4{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.menuchild2 .menu4 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:15%;
+}
+.menuchild2 .menu4 article:not(h3){
+    color:white;
+    margin-top:30px;
+}
+.menuchild2 .menu4 article h3{
+    color:rgb(45, 207, 45);
+    padding:30px 0px 10px 0px ;
+}
+.menuchild2 .menu5{
+    width:282px;
+    height:300px;
+    background-color:white;
+    transition:all .4s ease-in-out;
+    background-image:url('shishperk.jpg');
+    background-size:282px 300px;
+    border-radius:15px;
+    position:relative;
+    
+}
+.menuchild2 .menu5 .cover5{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.menuchild2 .menu6{
+    width:282px;
+    height:300px;
+    background-color:white;
+    transition:all .4s ease-in-out;
+    background-image:url('fattahoms.jpg');
+    background-size:282px 300px;
+    border-radius:15px;
+    position:relative; 
+}
+.menuchild2 .menu6 .cover6{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.menuchild2 .menu4:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+.menuchild2 .menu5:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+.menuchild2 .menu6:hover{
+    transform:translate3d(0,-10px,10px);
+    transform-style: preserve-3d;
+}
+/*end menuchild2*/
+/*start menu4*/
+.menuchild2 .menu4 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:15%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild2 .menu4 article h3 , h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+}
+/*end menu4*/
+/*start menu5*/
+.menuchild2 .menu5 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:4%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild2 .menu5 article h3 , h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+}
+/*end menu5*/
+/*start menu6*/
+.menuchild2 .menu6 article{
+    position:absolute;
+    z-index:2;
+    text-align:center;
+    left:19%;
+    color:white;
+    margin-top:30px;
+}
+
+.menuchild2 .menu6 article h3 ,h2{
+    color:rgb(198, 201, 53);
+    padding:30px 0px 10px 0px ;
+/*end menu6*/
+/*end features of every menu*/
+/*end the menu*/
